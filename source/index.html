@@ -11,36 +11,40 @@
     <title>SEDONA</title>
   </head>
   <body class="page__body">
-    <header class="page-header">
-      <nav class="main-nav main-nav--opened main-nav--nojs">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nave__link">Главная</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nave__link">Фото и видео</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nave__link">Форма Отзыва</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="" class="main-nave__link">HTML ACADEMY</a>
-          </li>
-          <li class="main-nav__item main-nav__item--logo">
-            <picture>
-              <img src="img/main-nav/logotype-mobile.svg" width="102" height="84" alt="логотип SEDONA">
-            </picture>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="page-main">
-    </main>
-    <footer class="page-footer">
-    </footer>
-    <script src="js/script.min.js"></script>
+    <div class="page__wrapper">
+      <header class="page-header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nave__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nave__link main-nave__link-current">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nave__link">Форма Отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="" class="main-nave__link">HTML ACADEMY</a>
+            </li>
+            <li class="main-nav__item main-nav__item--logo">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/main-nav//logotype-desktop.svg" width="186.6" height="96.43">
+                <source media="(min-width: 768px)" srcset="img/main-nav/logotype-tablet.svg" width="101.6" height="84">
+                <img src="img/main-nav/logotype-mobile.svg" width="102" height="84" alt="логотип SEDONA">
+              </picture>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="page-main">
+      </main>
+      <footer class="page-footer">
+      </footer>
+      <script src="js/script.min.js"></script>
+    </div>
   </body>
 </html>
