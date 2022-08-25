@@ -10,6 +10,9 @@
   background-position: top;
   min-height: 227px;
   padding: 71px 15px 20px;
+  @media (min-width: @tablet-width) {
+    background-image: none;
+  }
 }
 
 .reasons-item__title {
@@ -40,6 +43,12 @@
   margin-top: 17px;
 }
 .reasons-item__img {
+  object-fit: cover;
+  width: 100%;
+  height: 260px;
+  @media (min-width: @tablet-width) {
+    height: 256px;
+  }
 }
 .reasons-item__example {
   padding: 16px 20px 10px 69px;
