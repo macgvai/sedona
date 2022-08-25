@@ -1,5 +1,10 @@
 .reasons-item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 
 .reasons-item--1 {
 }
@@ -12,6 +17,13 @@
   padding: 71px 15px 20px;
   @media (min-width: @tablet-width) {
     background-image: none;
+    width: 256px;
+    height: 256px;
+    padding: 41px 33px 20px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 400px;
+    padding: 48px 66px 20px;
   }
 }
 
@@ -23,6 +35,13 @@
   text-align: center;
   text-transform: uppercase;
   color: @white;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 50px;
+  }
 }
 
 .reasons-item__number {
@@ -33,7 +52,11 @@
   text-align: center;
   text-transform: uppercase;
   color: @white;
+  @media (min-width: @tablet-width) {
+    margin-top: 12px;
+  }
 }
+
 .reasons-item__descr {
   font-size: 14px;
   line-height: 21px;
@@ -41,6 +64,9 @@
   text-transform: uppercase;
   color: @white;
   margin-top: 17px;
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+  }
 }
 .reasons-item__img {
   object-fit: cover;
@@ -50,6 +76,22 @@
     height: 256px;
   }
 }
+
+.reasons-item__img--grow {
+  @media (min-width: @tablet-width) {
+    height: 256px;
+    flex-grow: 1;
+  }
+}
+
+.reasons-item__example-layout {
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 330px;
+  }
+}
+
 .reasons-item__example {
   padding: 16px 20px 10px 69px;
   position: relative;
@@ -64,10 +106,26 @@
     top: 6px;
     background-repeat: no-repeat;
   }
+  @media (min-width: @tablet-width) {
+    padding: 158px 31px 20px;
+    &::before {
+      width: 75px;
+      height: 72px;
+      left: 50%;
+      top: 61px;
+      transform: translateX(-50%);
+    }
+  }
+  @media (min-width: @desktop-width) {
+    padding: 158px 50px 20px;
+  }
 }
 
 .reasons-item__example--1 {
   margin-top: 16px;
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .reasons-item__example--2 {
@@ -77,6 +135,16 @@
     height: 38px;
     left: 25px;
     top: 4px;
+  }
+  @media (min-width: @tablet-width) {
+    order: 1;
+    &::before {
+      width: 64px;
+      height: 75px;
+      left: 50%;
+      top: 56px;
+      transform: translateX(-50%);
+    }
   }
 }
 
@@ -88,6 +156,16 @@
     left: 18px;
     top: 10px;
   }
+  @media (min-width: @tablet-width) {
+    padding: 158px 50px 20px;
+    &::before {
+      width: 76px;
+      height: 68px;
+      left: 50%;
+      top: 63px;
+      transform: translateX(-50%);
+    }
+  }
 }
 
 .reasons-item__example-title {
@@ -97,7 +175,13 @@
   line-height: 26px;
   text-transform: uppercase;
   color: @black;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
 }
+
 .reasons-item__example-descr {
   margin: 0;
   margin-top: 16px;
@@ -105,4 +189,8 @@
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    text-align: center;
+    margin-top: 23px;
+  }
 }
