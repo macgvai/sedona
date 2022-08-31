@@ -8,6 +8,14 @@
 
 .reasons-item--1 {
 }
+
+.reasons-item--2 {
+  margin-top: 25px;
+  @media (min-width: @tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .reasons-item__inner {
   background: @main-color;
   background-image: url(../img/reasons-item/white-copy.svg);
@@ -27,6 +35,19 @@
   }
 }
 
+.reasons-item__inner--2 {
+  background-image: none;
+  padding-top: 38px;
+  min-height: 191px;
+  @media (min-width: @tablet-width) {
+    order: 1;
+    padding-top: 43px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 52px 85px;
+  }
+}
+
 .reasons-item__title {
   margin: 0;
   font-weight: 700;
@@ -41,6 +62,15 @@
   }
   @media (min-width: @desktop-width) {
     padding: 0 50px;
+  }
+}
+
+.reasons-item__title--2 {
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;
   }
 }
 
